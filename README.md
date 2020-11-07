@@ -20,4 +20,5 @@ libglu1-mesa-dev
 libxdamage-dev
 libsm6
 libice6
+libharfbuzz-dev
 ```
