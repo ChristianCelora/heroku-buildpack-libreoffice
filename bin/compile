@@ -18,8 +18,8 @@ mkdir -p $(dirname $PROFILE_PATH)
 echo 'export OFFICE_PATH="$HOME/.apt/usr/lib/libreoffice"' >> $PROFILE_PATH
 
 cd $APT_DIR/usr/lib/x86_64-linux-gnu/
-echo "$(ls)" # test 
-ln -sv mesa/libGL.so.1 .
+echo "$(ls | grep libGL)" # test 
+ln -sv libGL.so.1 .
 
 cd $APT_DIR/usr/lib/x86_64-linux-gnu
 ln -sv ../libreoffice/program/*.so .
