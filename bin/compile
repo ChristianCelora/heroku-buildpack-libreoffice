@@ -19,6 +19,7 @@ echo 'export OFFICE_PATH="$HOME/.apt/usr/lib/libreoffice"' >> $PROFILE_PATH
 
 cd $APT_DIR/usr/lib/x86_64-linux-gnu/ 
 #ln -sv libGL.so.1 . # no need with libglu1-mesa-dev
+echo $("ls -la | grep libharfbuzz") # test
 cp libharfbuzz.so libharfbuzz.so.0
 echo $("ls -la | grep libharfbuzz") # test
 
