@@ -11,8 +11,6 @@ heroku buildpacks:add --index 2 https://github.com/sumeetattree/heroku-buildpack
 
 Create an `Aptfile` at the project root
 ```
-:repo:deb http://http.us.debian.org/debian stretch main
-
 libreoffice
 libxinerama-dev
 libgl1-mesa-dev
@@ -20,5 +18,6 @@ libglu1-mesa-dev
 libxdamage-dev
 libsm6
 libice6
-libharfbuzz-dev
+libharfbuzz0b
+libharfbuzz-icu0
 ```
